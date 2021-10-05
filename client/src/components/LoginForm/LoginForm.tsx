@@ -29,7 +29,6 @@ const LoginForm = () => {
       <Form>
         <LoginFormInput name="email" type="text" label="email" />
         <LoginFormInput name="password" type="password" label="password" />
-        <FormikInputWrapper />
         <ReusableButton>Submit</ReusableButton>
       </Form>
     </Formik>

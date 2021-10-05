@@ -10,7 +10,7 @@ import useStyles from '../../mui/useStyles';
 import RegisterForm from '../RegisterForm/RegisterForm';
 
 const AuthForm = () => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(1);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -21,6 +21,7 @@ const AuthForm = () => {
     <div className={classes['form-wrapper']}>
       <Tabs
         variant="fullWidth"
+        value={value}
         onChange={handleChange}
         className={styles['form-content']}
       >

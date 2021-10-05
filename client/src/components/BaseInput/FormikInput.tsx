@@ -13,10 +13,9 @@ const LoginFormInput: FC<{ name: string; label: string; type: string }> = ({
   const hasError = Boolean(meta.touched && meta.error);
   const isCorrect = Boolean(meta.touched && !meta.error);
   const styles = useStyles();
-  console.log(label)
   return (
     <div style={{ marginBottom: '12px' }}>
-      <FormControl variant="standard" fullWidth>
+      <FormControl variant="standard" fullWidth component="div">
         <div>
           {label}
         </div>
