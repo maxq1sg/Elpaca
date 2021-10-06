@@ -14,6 +14,7 @@ console.log(configuration.database);
     SequelizeModule.forRoot({
       ...configuration.database,
       synchronize: true,
+      autoLoadModels: true,
       logging: true,
       models: [User],
     }),
